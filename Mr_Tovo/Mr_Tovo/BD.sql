@@ -5,6 +5,7 @@ DROP TABLE reponse;
 DROP TABLE question;
 DROP TABLE experience;
 DROP TABLE infoCandidat;
+DROP TABLE spectBesion;
 DROP TABLE besoin;
 DROP TABLE departement;
 DROP TABLE candidat;
@@ -70,11 +71,22 @@ CREATE TABLE besoin(
     descritpion VARCHAR(10000)  
 );
 
+CREATE TABLE specBesoin(
+    id SERIAL PRIMARY KEY,
+    idBesion INTEGER REFERENCES besoin(id),
+    idDstrict INTEGER REFERENCES district(id),
+    idDiplome INTEGER REFERENCES diplome(id),
+    idNationalite INTEGER REFERENCES nationalite(id),
+    idGenre INTEGER REFERENCES genre(id),
+    idSituation INTEGER REFERENCES situation(id)
+);
+
 CREATE TABLE candidat(
     id SERIAL PRIMARY KEY,
     nom VARCHAR(200),
     prenom VARCHAR(200),
-    adress VARCHAR(200)
+    adress VARCHAR(200),
+    naissance TIMESTAMP
 );
 
 CREATE TABLE infoCandidat(
@@ -118,6 +130,7 @@ CREATE TABLE reponseC(
     idCandidat INTEGER REFERENCES candidat(id),
     note REAL
 );
+
 
 
 
