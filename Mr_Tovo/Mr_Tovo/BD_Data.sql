@@ -316,4 +316,13 @@ VALUES (15, 1, 3, 0);
 
 
 
+-- Pour la table "spectBesoin"
+INSERT INTO spectBesoin (idBesoin, idDistrict, idDiplome, idNationalite, idGenre, idSituation)
+VALUES (1, 1, 2, 3, 4, 1);
+
+INSERT INTO spectBesoin (idBesoin, idDistrict, idDiplome, idNationalite, idGenre, idSituation)
+VALUES (2, 3, 4, 2, 5, 1);
+
+INSERT INTO spectBesoin (idBesoin, idDistrict, idDiplome, idNationalite, idGenre, idSituation)
+VALUES (3, 5, 1, 5, 3, 1);
 
