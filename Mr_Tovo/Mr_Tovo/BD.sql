@@ -96,6 +96,7 @@ CREATE TABLE infoCandidat(
     idDiplome INTEGER REFERENCES diplome(id),
     idNationalite INTEGER REFERENCES nationalite(id),
     idDistrict INTEGER REFERENCES  district(id),
+    idGenre INTEGER REFERENCES genre(id),
     salaireMin REAL,
     salaireMax REAL
 );

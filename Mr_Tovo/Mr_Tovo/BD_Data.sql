@@ -65,20 +65,20 @@ INSERT INTO candidat (nom, prenom, adress) VALUES ('Girard', 'Luc', '2222 Avenue
 
 
 -- Pour la table "infoCandidat"
-INSERT INTO infoCandidat (idCandidat, idSituation, idDiplome, idNationalite, idDistrict, salaireMin, salaireMax)
-VALUES (1, 1, 3, 1, 2, 30000.0, 45000.0);
+INSERT INTO infoCandidat (idCandidat, idSituation, idDiplome, idNationalite, idDistrict,idGenre salaireMin, salaireMax)
+VALUES (1, 1, 3, 1, 2, 1, 30000.0, 45000.0);
 
-INSERT INTO infoCandidat (idCandidat, idSituation, idDiplome, idNationalite, idDistrict, salaireMin, salaireMax)
-VALUES (2, 2, 2, 2, 1, 35000.0, 50000.0);
+INSERT INTO infoCandidat (idCandidat, idSituation, idDiplome, idNationalite, idDistrict,idGenre salaireMin, salaireMax)
+VALUES (2, 2, 2, 2, 1, 2, 35000.0, 50000.0);
 
-INSERT INTO infoCandidat (idCandidat, idSituation, idDiplome, idNationalite, idDistrict, salaireMin, salaireMax)
-VALUES (3, 3, 4, 3, 3, 40000.0, 55000.0);
+INSERT INTO infoCandidat (idCandidat, idSituation, idDiplome, idNationalite, idDistrict,idGenre salaireMin, salaireMax)
+VALUES (3, 3, 4, 3, 3, 1, 40000.0, 55000.0);
 
-INSERT INTO infoCandidat (idCandidat, idSituation, idDiplome, idNationalite, idDistrict, salaireMin, salaireMax)
-VALUES (4, 4, 1, 4, 2, 25000.0, 40000.0);
+INSERT INTO infoCandidat (idCandidat, idSituation, idDiplome, idNationalite, idDistrict,idGenre salaireMin, salaireMax)
+VALUES (4, 4, 1, 4, 2, 2, 25000.0, 40000.0);
 
-INSERT INTO infoCandidat (idCandidat, idSituation, idDiplome, idNationalite, idDistrict, salaireMin, salaireMax)
-VALUES (5, 5, 2, 5, 1, 32000.0, 48000.0);
+INSERT INTO infoCandidat (idCandidat, idSituation, idDiplome, idNationalite, idDistrict,idGenre salaireMin, salaireMax)
+VALUES (5, 5, 2, 5, 1, 1, 32000.0, 48000.0);
 
 
 -- Pour la table "experience"
